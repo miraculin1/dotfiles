@@ -156,7 +156,20 @@ colorscheme gruvbox-material
 "settings for look
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set cursorline
-set background=dark
+let color_scheme = system("gsettings get org.gnome.desktop.interface color-scheme")
+" 去掉返回值的换行符和空格
+let color_scheme = substitute(color_scheme, '\n', '', 'g')
+let color_scheme = substitute(color_scheme, ' ', '', 'g')
+" 去掉两边的单引号
+let color_scheme = substitute(color_scheme, '^''\|''$', '', 'g')
+echo color_scheme
+if color_scheme == "default"
+  set bg=light
+elseif color_scheme == "prefer-dark"
+  set bg=dark
+else
+  set bg=dark
+endif
 set number
 set signcolumn=yes:1
 set relativenumber

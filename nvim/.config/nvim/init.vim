@@ -18,7 +18,7 @@ Plug 'Civitasv/cmake-tools.nvim'
 
 Plug 'nvim-tree/nvim-tree.lua'
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.2'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.3'}
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Plug 'morhetz/gruvbox'
@@ -594,6 +594,10 @@ require'nvim-treesitter.configs'.setup {
 
   ---- If you need to change the installation directory of the parsers (see -> Advanced Setup)
   -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
+
+  indent = {
+    enable = true,
+  },
 
   highlight = {
     -- `false` will disable the whole extension

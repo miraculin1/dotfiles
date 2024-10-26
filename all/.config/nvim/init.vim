@@ -18,7 +18,8 @@ Plug 'Civitasv/cmake-tools.nvim'
 
 Plug 'nvim-tree/nvim-tree.lua'
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" since v0.9.3 treesitter don't supports nvim 0.9.5
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.2'}
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Plug 'morhetz/gruvbox'

@@ -131,3 +131,4 @@ function noproxy() {
 
 export -f proxy
 export -f noproxy
+export LANG=en_US.UTF-8

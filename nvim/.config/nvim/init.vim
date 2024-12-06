@@ -588,7 +588,21 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<leader>ss", -- set to `false` to disable one of the mappings
+      node_incremental = "<leader>sk",
+      scope_incremental = "<leader>s[",
+      node_decremental = "<leader>sj",
+    },
+  },
+
 }
+
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 
 -- require'treesitter-context'.setup{
 --   enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)

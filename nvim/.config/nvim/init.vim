@@ -14,6 +14,8 @@ call plug#begin()
 
 " past img in .md
 
+Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'Civitasv/cmake-tools.nvim'
 
 Plug 'preservim/nerdtree'

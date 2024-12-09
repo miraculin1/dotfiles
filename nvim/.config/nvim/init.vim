@@ -45,7 +45,9 @@ Plug 'neovim/nvim-lspconfig'
 " dependency
 Plug 'nvim-lua/plenary.nvim'
 
-Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+" Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " linter
 Plug 'jose-elias-alvarez/null-ls.nvim'
@@ -194,15 +196,15 @@ set modelines=3
 
 " " fzf settings
 " """"""""""""""""""""""""""""""
-" nnoremap <leader>ff :Files<CR>
-" nnoremap <leader>fb :Buffer<CR>
-" nnoremap <leader>fl :Lines<CR>
-" nnoremap <leader>fj :Jumps<CR?
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :RG<CR>
+nnoremap <leader>fb :buffers<CR>
+nnoremap <leader>fh :Helptags<CR>
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+" nnoremap <leader>ff <cmd>Telescope find_files<cr>
+" nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+" nnoremap <leader>fb <cmd>Telescope buffers<cr>
+" nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " spectre
 """"""""""""""""""""""""""""

@@ -198,7 +198,7 @@ set modelines=3
 " """"""""""""""""""""""""""""""
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fg :RG<CR>
-nnoremap <leader>fb :buffers<CR>
+nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fh :Helptags<CR>
 " Find files using Telescope command-line sugar.
 " nnoremap <leader>ff <cmd>Telescope find_files<cr>

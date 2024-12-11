@@ -118,6 +118,10 @@ let mapleader = " "
 :nnoremap <leader><A-h> <C-w>H
 :nnoremap <leader><A-k> <C-w>K
 :nnoremap <leader><A-l> <C-w>L
+:nnoremap <leader><C-j> <C-w>J
+:nnoremap <leader><C-h> <C-w>H
+:nnoremap <leader><C-k> <C-w>K
+:nnoremap <leader><C-l> <C-w>L
 
 :nnoremap <TAB>j :bn<CR>
 :nnoremap <TAB>k :bp<CR>

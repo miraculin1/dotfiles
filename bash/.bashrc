@@ -133,3 +133,5 @@ export -f proxy
 export -f noproxy
 export LANG=en_US.UTF-8
 
+PATH=/home/miraculin/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+alias vim='nvim'

@@ -230,6 +230,10 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 
 
+"nerdtree
+"""""""""""""""""""""""""""""""""""""
+nnoremap <leader>t :NERDTreeToggle<CR>
+
 "nerdcommenter
 """"""""""""""""""""""""""""""""""""""
 " Create default mappings

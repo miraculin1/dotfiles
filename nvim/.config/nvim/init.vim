@@ -68,7 +68,7 @@ Plug 'rafamadriz/friendly-snippets'
 
 " Plug 'lukas-reineke/indent-blankline.nvim'
 " new indent
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim', {'tag': 'v3.7.1'}
 
 Plug 'RRethy/vim-illuminate'
 

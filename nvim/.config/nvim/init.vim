@@ -357,7 +357,7 @@ require('gitsigns').setup()
 ------------------------
 require("mason").setup()
 require("mason-lspconfig").setup {
-      ensure_installed = { "clangd", "ruff", "jedi_language_server@0.41.0"},
+      ensure_installed = { "clangd", "ruff", "jedi_language_server@0.42.0"},
   }
 
 require("mason-lspconfig").setup_handlers {

@@ -14,93 +14,93 @@ call plug#begin()
 
 " past img in .md
 
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator', { 'commit' : '791dacf' }
 
-Plug 'Civitasv/cmake-tools.nvim'
+Plug 'Civitasv/cmake-tools.nvim', { 'commit' : '1d96327' }
 
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree', { 'tag' : '7.1.3'}
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.3'}
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Plug 'morhetz/gruvbox'
 " Plug 'ellisonleao/gruvbox.nvim'
-Plug 'sainnhe/gruvbox-material'
+Plug 'sainnhe/gruvbox-material', { 'tag' : 'v1.2.5'}
 " Using Vim-Plug
 " Plug 'navarasu/onedark.nvim'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline', { 'commit' : '7a552f4'}
+Plug 'vim-airline/vim-airline-themes', { 'commit' : 'cda3b5e'}
 
 " Plug 'jiangmiao/auto-pairs'
-Plug 'windwp/nvim-autopairs'
+Plug 'windwp/nvim-autopairs', { 'commit' : '68f0e5c'}
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'tag' : 'v0.0.10' }
 
 " :MasonUpdate updates registry contents
-Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate' }
-Plug 'williamboman/mason-lspconfig.nvim'
-Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate', 'tag' : 'v1.9.0' }
+Plug 'williamboman/mason-lspconfig.nvim', { 'tag' : 'v1.28.0' }
+Plug 'neovim/nvim-lspconfig', { 'tag' : 'v0.1.8' }
 
 " dependency
-Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/plenary.nvim', { 'commit' : '857c5ac' }
 
 " Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() }, 'tag' : 'v0.60.2'}
+Plug 'junegunn/fzf.vim', { 'commit' : 'f06bd1e'}
 
 " linter
-Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'jose-elias-alvarez/null-ls.nvim', { 'commit' : '0010ea9' }
 
-Plug 'folke/todo-comments.nvim'
+Plug 'folke/todo-comments.nvim', { 'tag' : 'v1.4.0' }
 
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp', { 'commit' : '99290b3' }
+Plug 'hrsh7th/cmp-buffer', { 'commit' : '3022dbc' }
+Plug 'hrsh7th/cmp-path', { 'commit' : '91ff86c' }
+Plug 'hrsh7th/cmp-cmdline', { 'commit' : 'd250c63' }
+Plug 'hrsh7th/nvim-cmp', { 'commit' : '5a11682' }
 
 "" snippet plugins
 " follow latest release and install jsregexp.
 Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.3.0', 'do': 'make install_jsregexp'} " Replace <CurrentMajor> by the latest released major (first number of latest release)
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'rafamadriz/friendly-snippets'
+Plug 'saadparwaiz1/cmp_luasnip', { 'commit' : '98d9cb5' }
+Plug 'rafamadriz/friendly-snippets', { 'commit' : 'efff286' }
 
 " Plug 'lukas-reineke/indent-blankline.nvim'
 " new indent
-Plug 'lukas-reineke/indent-blankline.nvim', {'tag': 'v3.7.1'}
+Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v3.7.1' }
 
-Plug 'RRethy/vim-illuminate'
+Plug 'RRethy/vim-illuminate', { 'commit' : '19cb21f' }
 
 " replace
-Plug 'nvim-pack/nvim-spectre'
+Plug 'nvim-pack/nvim-spectre', { 'commmit' : 'ddd7383' }
 
-Plug 'folke/flash.nvim'
+Plug 'folke/flash.nvim', { 'tag' : 'v2.1.0' }
 
 " for icons
-Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-web-devicons', { 'commit' : '1020869' }
 
 
 " git things
 " Plug 'airblade/vim-gitgutter'
-Plug 'lewis6991/gitsigns.nvim'
-Plug 'sindrets/diffview.nvim'
+Plug 'lewis6991/gitsigns.nvim', { 'tag' : 'v1.0.1' }
+Plug 'sindrets/diffview.nvim', { 'commit' : '4516612' }
 
-Plug 'preservim/nerdcommenter'
-Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'preservim/nerdcommenter', { 'commit' : '66c07e4' }
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() }, 'commit' : '750d17d' }
 
-Plug 'machakann/vim-sandwich'
+Plug 'machakann/vim-sandwich', { 'commit' : '74cf93d' }
 
 "rename box
-Plug 'stevearc/dressing.nvim'
+Plug 'stevearc/dressing.nvim', { 'commit' : '2d7c2db' }
 
 " code outline
-Plug 'stevearc/aerial.nvim'
+Plug 'stevearc/aerial.nvim', { 'commit' : '3284a2c' }
 
-Plug 'img-paste-devs/img-paste.vim'
+Plug 'img-paste-devs/img-paste.vim', { 'commit' : '787be15' }
 
 " " for latex
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'commit' : '096a045' }
 " Initialize plugin system
 call plug#end()
 
@@ -356,7 +356,9 @@ require('gitsigns').setup()
 -- mason
 ------------------------
 require("mason").setup()
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup {
+      ensure_installed = { "clangd", "ruff", "jedi_language_server@0.41.0"},
+  }
 
 require("mason-lspconfig").setup_handlers {
     -- The first entry (without a key) will be the default handler

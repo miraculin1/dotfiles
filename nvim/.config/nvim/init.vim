@@ -25,7 +25,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.3'}
 
 " Plug 'morhetz/gruvbox'
 " Plug 'ellisonleao/gruvbox.nvim'
-Plug 'sainnhe/gruvbox-material', { 'tag' : 'v1.2.5'}
+Plug 'sainnhe/gruvbox-material', { 'tag' : '146f40f'}
 " Using Vim-Plug
 " Plug 'navarasu/onedark.nvim'
 

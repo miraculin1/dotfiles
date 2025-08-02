@@ -110,18 +110,15 @@ call plug#end()
 :nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-:nnoremap <A-j> <C-w>j
-:nnoremap <A-h> <C-w>h
-:nnoremap <A-k> <C-w>k
-:nnoremap <A-l> <C-w>l
+:nnoremap <A-j> <C-w>-
+:nnoremap <A-h> <C-w><
+:nnoremap <A-k> <C-w>+
+:nnoremap <A-l> <C-w>>
+:nnoremap <A-=> <C-W>=
 :nnoremap <leader><A-j> <C-w>J
 :nnoremap <leader><A-h> <C-w>H
 :nnoremap <leader><A-k> <C-w>K
 :nnoremap <leader><A-l> <C-w>L
-:nnoremap <leader><C-j> <C-w>J
-:nnoremap <leader><C-h> <C-w>H
-:nnoremap <leader><C-k> <C-w>K
-:nnoremap <leader><C-l> <C-w>L
 
 :nnoremap <TAB>j :bn<CR>
 :nnoremap <TAB>k :bp<CR>

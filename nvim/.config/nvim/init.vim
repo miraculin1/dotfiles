@@ -25,7 +25,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.3'}
 
 " Plug 'morhetz/gruvbox'
 " Plug 'ellisonleao/gruvbox.nvim'
-Plug 'sainnhe/gruvbox-material', { 'tag' : '146f40f'}
+Plug 'sainnhe/gruvbox-material', { 'commit' : '146f40f'}
 " Using Vim-Plug
 " Plug 'navarasu/onedark.nvim'
 
@@ -167,7 +167,6 @@ let color_scheme = substitute(color_scheme, '\n', '', 'g')
 let color_scheme = substitute(color_scheme, ' ', '', 'g')
 " 去掉两边的单引号
 let color_scheme = substitute(color_scheme, '^''\|''$', '', 'g')
-set bg=dark
 set number
 set signcolumn=yes:1
 set relativenumber

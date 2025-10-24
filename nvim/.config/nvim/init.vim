@@ -70,7 +70,7 @@ Plug 'rafamadriz/friendly-snippets', { 'commit' : 'efff286' }
 " new indent
 Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v3.7.1' }
 
-Plug 'RRethy/vim-illuminate', { 'commit' : '19cb21f' }
+Plug 'RRethy/vim-illuminate', { 'commit' : '0d1e936' }
 
 " replace
 Plug 'nvim-pack/nvim-spectre', { 'commmit' : 'ddd7383' }
@@ -100,7 +100,7 @@ Plug 'stevearc/aerial.nvim', { 'commit' : '3284a2c' }
 Plug 'img-paste-devs/img-paste.vim', { 'commit' : '787be15' }
 
 " " for latex
-Plug 'lervag/vimtex', { 'commit' : '096a045' }
+Plug 'lervag/vimtex', { 'tag' : 'v2.16' }
 " Initialize plugin system
 call plug#end()
 
@@ -562,7 +562,7 @@ require'nvim-treesitter.configs'.setup {
 
   -- Automatically install missing parsers when entering buffer
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-  auto_install = true,
+  auto_install = false,
 
   -- List of parsers to ignore installing (for "all")
   ignore_install = {},
@@ -647,22 +647,24 @@ require('illuminate').configure({
     filetype_overrides = {},
     -- filetypes_denylist: filetypes to not illuminate, this overrides filetypes_allowlist
     filetypes_denylist = {
+        'dirbuf',
         'dirvish',
         'fugitive',
     },
-    -- filetypes_allowlist: filetypes to illuminate, this is overriden by filetypes_denylist
+    -- filetypes_allowlist: filetypes to illuminate, this is overridden by filetypes_denylist
+    -- You must set filetypes_denylist = {} to override the defaults to allow filetypes_allowlist to take effect
     filetypes_allowlist = {},
     -- modes_denylist: modes to not illuminate, this overrides modes_allowlist
     -- See `:help mode()` for possible values
     modes_denylist = {},
-    -- modes_allowlist: modes to illuminate, this is overriden by modes_denylist
+    -- modes_allowlist: modes to illuminate, this is overridden by modes_denylist
     -- See `:help mode()` for possible values
     modes_allowlist = {},
     -- providers_regex_syntax_denylist: syntax to not illuminate, this overrides providers_regex_syntax_allowlist
     -- Only applies to the 'regex' provider
     -- Use :echom synIDattr(synIDtrans(synID(line('.'), col('.'), 1)), 'name')
     providers_regex_syntax_denylist = {},
-    -- providers_regex_syntax_allowlist: syntax to illuminate, this is overriden by providers_regex_syntax_denylist
+    -- providers_regex_syntax_allowlist: syntax to illuminate, this is overridden by providers_regex_syntax_denylist
     -- Only applies to the 'regex' provider
     -- Use :echom synIDattr(synIDtrans(synID(line('.'), col('.'), 1)), 'name')
     providers_regex_syntax_allowlist = {},
@@ -670,13 +672,21 @@ require('illuminate').configure({
     under_cursor = true,
     -- large_file_cutoff: number of lines at which to use large_file_config
     -- The `under_cursor` option is disabled when this cutoff is hit
-    large_file_cutoff = nil,
+    large_file_cutoff = 10000,
     -- large_file_config: config to use for large files (based on large_file_cutoff).
     -- Supports the same keys passed to .configure
     -- If nil, vim-illuminate will be disabled for large files.
     large_file_overrides = nil,
     -- min_count_to_highlight: minimum number of matches required to perform highlighting
     min_count_to_highlight = 1,
+    -- should_enable: a callback that overrides all other settings to
+    -- enable/disable illumination. This will be called a lot so don't do
+    -- anything expensive in it.
+    should_enable = function(bufnr) return true end,
+    -- case_insensitive_regex: sets regex case sensitivity
+    case_insensitive_regex = false,
+    -- disable_keymaps: disable default keymaps
+    disable_keymaps = false,
 })
 
 require("cmake-tools").setup {

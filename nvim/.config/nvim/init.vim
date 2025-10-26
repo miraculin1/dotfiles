@@ -58,6 +58,7 @@ Plug 'hrsh7th/cmp-nvim-lsp', { 'commit' : '99290b3' }
 Plug 'hrsh7th/cmp-buffer', { 'commit' : '3022dbc' }
 Plug 'hrsh7th/cmp-path', { 'commit' : '91ff86c' }
 Plug 'hrsh7th/cmp-cmdline', { 'commit' : 'd250c63' }
+Plug 'micangl/cmp-vimtex', { 'commit' : '5283bf9' }
 Plug 'hrsh7th/nvim-cmp', { 'commit' : '5a11682' }
 
 "" snippet plugins
@@ -464,6 +465,7 @@ local cmp = require'cmp'
       -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
+      { name = 'vimtex' },
     })
   })
 

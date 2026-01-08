@@ -190,11 +190,6 @@ set wildmode=longest:list,full
 set hidden
 set updatetime=100
 
-" check modeline in 2 lines at both begin and end
-" default 5, interufere with STM32CubeMX code
-set modelines=3
-
-
 " " fzf settings
 " """"""""""""""""""""""""""""""
 nnoremap <leader>ff :Files<CR>
@@ -257,7 +252,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
 "" doge - for document generate

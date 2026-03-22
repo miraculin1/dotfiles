@@ -209,7 +209,7 @@ nnoremap <leader>fr :Spectre<CR>
 " markdown img insert
 autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
 " there are some defaults for image directory and image name, you can change them
-" let g:mdip_imgdir = 'img'
+let g:mdip_imgdir = 'pics'
 " let g:mdip_imgname = 'image'
 autocmd FileType markdown let g:PasteImageFunction = 'g:MarkdownPasteImage'
 autocmd FileType tex let g:PasteImageFunction = 'g:LatexPasteImage'

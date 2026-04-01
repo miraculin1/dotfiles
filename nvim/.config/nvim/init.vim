@@ -75,7 +75,7 @@ Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v3.7.1' }
 Plug 'RRethy/vim-illuminate', { 'commit' : '0d1e936' }
 
 " replace
-Plug 'nvim-pack/nvim-spectre', { 'commmit' : 'ddd7383' }
+Plug 'nvim-pack/nvim-spectre', { 'commit' : 'ddd7383' }
 
 Plug 'folke/flash.nvim', { 'tag' : 'v2.1.0' }
 

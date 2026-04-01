@@ -21,4 +21,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # 值得注意
 
-- 这个版本并未经过测试
+这个版本并未经过测试，但是有已知问题：
+1. 现在强依赖 tree-sitter-cli，需要使用 cargo/npm 安装
+2. pre-build 的 nvim 以及 tree-sitter 是 build against 新版本的 glibc，在老系统(ubuntu 20.04)上会出现兼容性问题

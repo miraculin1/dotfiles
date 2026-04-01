@@ -14,95 +14,95 @@ call plug#begin()
 
 " past img in .md
 
-Plug 'christoomey/vim-tmux-navigator', { 'commit' : '791dacf' }
+Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'Civitasv/cmake-tools.nvim', { 'commit' : '1d96327' }
+Plug 'Civitasv/cmake-tools.nvim'
 
-Plug 'preservim/nerdtree', { 'tag' : '7.1.3'}
+Plug 'preservim/nerdtree'
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'tag' : 'v0.9.3'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Plug 'morhetz/gruvbox'
 " Plug 'ellisonleao/gruvbox.nvim'
-Plug 'sainnhe/gruvbox-material', { 'commit' : '146f40f'}
+Plug 'sainnhe/gruvbox-material'
 " Using Vim-Plug
 " Plug 'navarasu/onedark.nvim'
 
-Plug 'vim-airline/vim-airline', { 'commit' : '7a552f4'}
-Plug 'vim-airline/vim-airline-themes', { 'commit' : 'cda3b5e'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Plug 'jiangmiao/auto-pairs'
-Plug 'windwp/nvim-autopairs', { 'commit' : '68f0e5c'}
+Plug 'windwp/nvim-autopairs'
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'tag' : 'v0.0.10' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 
 " :MasonUpdate updates registry contents
-Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate', 'tag' : 'v1.9.0' }
-Plug 'williamboman/mason-lspconfig.nvim', { 'tag' : 'v1.28.0' }
-Plug 'neovim/nvim-lspconfig', { 'tag' : 'v0.1.8' }
+Plug 'mason-org/mason.nvim', { 'do': ':MasonUpdate' }
+Plug 'mason-org/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
 
 " dependency
-Plug 'nvim-lua/plenary.nvim', { 'commit' : '857c5ac' }
+Plug 'nvim-lua/plenary.nvim'
 
 " Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() }, 'tag' : 'v0.60.2'}
-Plug 'junegunn/fzf.vim', { 'commit' : 'f06bd1e'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " linter
-Plug 'jose-elias-alvarez/null-ls.nvim', { 'commit' : '0010ea9' }
+Plug 'nvimtools/none-ls.nvim'
 
-Plug 'folke/todo-comments.nvim', { 'tag' : 'v1.4.0' }
+Plug 'folke/todo-comments.nvim'
 
-Plug 'hrsh7th/cmp-nvim-lsp', { 'commit' : '99290b3' }
-Plug 'hrsh7th/cmp-buffer', { 'commit' : '3022dbc' }
-Plug 'hrsh7th/cmp-path', { 'commit' : '91ff86c' }
-Plug 'hrsh7th/cmp-cmdline', { 'commit' : 'd250c63' }
-Plug 'micangl/cmp-vimtex', { 'commit' : '5283bf9' }
-Plug 'hrsh7th/nvim-cmp', { 'commit' : '5a11682' }
-Plug 'kdheepak/cmp-latex-symbols', { 'commit' : '0f8a953' }
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'micangl/cmp-vimtex'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'kdheepak/cmp-latex-symbols'
 
 "" snippet plugins
 " follow latest release and install jsregexp.
-Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.3.0', 'do': 'make install_jsregexp'} " Replace <CurrentMajor> by the latest released major (first number of latest release)
-Plug 'saadparwaiz1/cmp_luasnip', { 'commit' : '98d9cb5' }
-Plug 'rafamadriz/friendly-snippets', { 'commit' : 'efff286' }
+Plug 'L3MON4D3/LuaSnip', {'do': 'make install_jsregexp'} " Replace <CurrentMajor> by the latest released major (first number of latest release)
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'rafamadriz/friendly-snippets'
 
 " Plug 'lukas-reineke/indent-blankline.nvim'
 " new indent
-Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v3.7.1' }
+Plug 'lukas-reineke/indent-blankline.nvim'
 
-Plug 'RRethy/vim-illuminate', { 'commit' : '0d1e936' }
+Plug 'RRethy/vim-illuminate'
 
 " replace
-Plug 'nvim-pack/nvim-spectre', { 'commmit' : 'ddd7383' }
+Plug 'nvim-pack/nvim-spectre'
 
-Plug 'folke/flash.nvim', { 'tag' : 'v2.1.0' }
+Plug 'folke/flash.nvim'
 
 " for icons
-Plug 'nvim-tree/nvim-web-devicons', { 'commit' : '1020869' }
+Plug 'nvim-tree/nvim-web-devicons'
 
 
 " git things
 " Plug 'airblade/vim-gitgutter'
-Plug 'lewis6991/gitsigns.nvim', { 'tag' : 'v1.0.1' }
-Plug 'sindrets/diffview.nvim', { 'commit' : '4516612' }
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'sindrets/diffview.nvim'
 
-Plug 'preservim/nerdcommenter', { 'commit' : '66c07e4' }
-Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() }, 'commit' : '750d17d' }
+Plug 'preservim/nerdcommenter'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
-Plug 'machakann/vim-sandwich', { 'commit' : '74cf93d' }
+Plug 'machakann/vim-sandwich'
 
 "rename box
-Plug 'stevearc/dressing.nvim', { 'commit' : '2d7c2db' }
+Plug 'stevearc/dressing.nvim'
 
 " code outline
-Plug 'stevearc/aerial.nvim', { 'commit' : '3284a2c' }
+Plug 'stevearc/aerial.nvim'
 
-Plug 'img-paste-devs/img-paste.vim', { 'commit' : '787be15' }
+Plug 'img-paste-devs/img-paste.vim'
 
 " " for latex
-Plug 'lervag/vimtex', { 'tag' : 'v2.16' }
+Plug 'lervag/vimtex'
 " Initialize plugin system
 call plug#end()
 
@@ -272,7 +272,7 @@ let g:far#enable_undo = 1
 "treesitter
 """"""""""""""""""
 set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+set foldexpr=v:lua.vim.treesitter.foldexpr()
 set nofoldenable
 autocmd BufReadPost,FileReadPost * normal zR
 
@@ -304,7 +304,7 @@ let g:vimtex_view_general_viewer = 'evince'
 " set output files into build
 let g:vimtex_compiler_latexmk = {
             \ 'out_dir' : 'build',
-            \ '' : '-xelatex',
+            \ 'options' : ['-xelatex'],
             \}
 "
 " let g:vimtex_compiler_latexmk = {
@@ -346,32 +346,40 @@ require("nvim-autopairs").setup {}
 -- gitsigns
 require('gitsigns').setup()
 
--- mason
+-- mason / lsp
 ------------------------
 require("mason").setup()
 require("mason-lspconfig").setup {
       ensure_installed = { "clangd", "ruff", "jedi_language_server@0.42.0"},
+      automatic_enable = false,
   }
 
-require("mason-lspconfig").setup_handlers {
-    -- The first entry (without a key) will be the default handler
-    -- and will be called for each installed server that doesn't have
-    -- a dedicated handler.
-    function (server_name) -- default handler (optional)
-        require("lspconfig")[server_name].setup {}
-    end,
-    -- Next, you can provide a dedicated handler for specific servers.
-    -- For example, a handler override for the `rust_analyzer`:
-    ["clangd"] = function ()
-    require('lspconfig').clangd.setup{
-    cmd = {
-      "clangd",
-      "-header-insertion=never",
-      "--query-driver=/usr/bin/gcc,/usr/bin/g++,/usr/bin/arm-none-eabi-gcc,/usr/bin/arm-none-eabi-g++",
-      }
-    }
-    end,
-}
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+local ok_cmp_lsp, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+if ok_cmp_lsp then
+  capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+end
+
+vim.lsp.config("clangd", {
+  capabilities = capabilities,
+  cmd = {
+    "clangd",
+    "-header-insertion=never",
+    "--query-driver=/usr/bin/gcc,/usr/bin/g++,/usr/bin/arm-none-eabi-gcc,/usr/bin/arm-none-eabi-g++",
+  },
+})
+
+vim.lsp.config("ruff", {
+  capabilities = capabilities,
+})
+
+vim.lsp.config("jedi_language_server", {
+  capabilities = capabilities,
+})
+
+vim.lsp.enable("clangd")
+vim.lsp.enable("ruff")
+vim.lsp.enable("jedi_language_server")
 
 local null_ls = require("null-ls")
 
@@ -552,63 +560,35 @@ vim.keymap.set("n", "<leader>o", "<cmd>AerialToggle!<CR>")
 
 -- Treesitter
 -- """"""""""""""""""""
-require'nvim-treesitter.configs'.setup {
-  -- A list of parser names, or "all" (the four listed parsers should always be installed)
-  ensure_installed = {},
+require('nvim-treesitter').setup({
+  install_dir = vim.fn.stdpath('data') .. '/site',
+})
 
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
+require('nvim-treesitter').install({
+  'bash',
+  'c',
+  'cpp',
+  'cmake',
+  'lua',
+  'python',
+  'vim',
+  'vimdoc',
+  'markdown',
+  'markdown_inline',
+  'latex',
+  'json',
+  'yaml',
+  'toml',
+  'xml',
+  'query',
+})
 
-  -- Automatically install missing parsers when entering buffer
-  -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-  auto_install = false,
-
-  -- List of parsers to ignore installing (for "all")
-  ignore_install = {},
-
-  ---- If you need to change the installation directory of the parsers (see -> Advanced Setup)
-  -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
-
-  indent = {
-    enable = true,
-  },
-
-  highlight = {
-    -- `false` will disable the whole extension
-    enable = true,
-
-    -- NOTE: these are the names of the parsers and not the filetype. (for example if you want to
-    -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
-    -- the name of the parser)
-    -- list of language that will be disabled
-    disable = {},
-    -- Or use a function for more flexibility, e.g. to disable slow treesitter highlight for large files
-    -- disable = function(lang, buf)
-    --     local max_filesize = 100 * 1024 -- 100 KB
-    --     local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
-    --     if ok and stats and stats.size > max_filesize then
-    --         return true
-    --     end
-    -- end,
-
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
-
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "<leader>ss", -- set to `false` to disable one of the mappings
-      node_incremental = "<leader>sk",
-      scope_incremental = "<leader>s[",
-      node_decremental = "<leader>sj",
-    },
-  },
-
-}
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = '*',
+  callback = function(args)
+    pcall(vim.treesitter.start, args.buf)
+  end,
+})
 
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'

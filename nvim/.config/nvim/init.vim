@@ -60,6 +60,7 @@ Plug 'hrsh7th/cmp-path', { 'commit' : '91ff86c' }
 Plug 'hrsh7th/cmp-cmdline', { 'commit' : 'd250c63' }
 Plug 'micangl/cmp-vimtex', { 'commit' : '5283bf9' }
 Plug 'hrsh7th/nvim-cmp', { 'commit' : '5a11682' }
+Plug 'kdheepak/cmp-latex-symbols', { 'commit' : '0f8a953' }
 
 "" snippet plugins
 " follow latest release and install jsregexp.
@@ -461,6 +462,7 @@ local cmp = require'cmp'
     }, {
       { name = 'buffer' },
       { name = 'vimtex' },
+      { name = 'latex_symbols' },
     })
   })
 

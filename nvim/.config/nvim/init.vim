@@ -49,9 +49,6 @@ Plug 'nvim-lua/plenary.nvim', { 'commit' : '857c5ac' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() }, 'tag' : 'v0.60.2'}
 Plug 'junegunn/fzf.vim', { 'commit' : 'f06bd1e'}
 
-" linter
-Plug 'jose-elias-alvarez/null-ls.nvim', { 'commit' : '0010ea9' }
-
 Plug 'folke/todo-comments.nvim', { 'tag' : 'v1.4.0' }
 
 Plug 'hrsh7th/cmp-nvim-lsp', { 'commit' : '99290b3' }
@@ -372,13 +369,6 @@ require("mason-lspconfig").setup_handlers {
     }
     end,
 }
-
-local null_ls = require("null-ls")
-
-null_ls.setup({
-    sources = {
-    },
-})
 
 -- Insert `(` after select function or method item
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')

@@ -133,7 +133,7 @@ export -f proxy
 export -f noproxy
 export LANG=en_US.UTF-8
 
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.local/bin"
 alias vim='nvim'
 
 export EDITOR=nvim

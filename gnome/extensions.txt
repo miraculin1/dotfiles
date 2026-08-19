@@ -1,0 +1,5 @@
+https://github.com/ubuntu/gnome-shell-extension-appindicator
+github.com/Tudmotu/gnome-shell-extension-clipboard-indicator
+https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki
+https://github.com/paperwm/PaperWM
+https://gitlab.gnome.org/GNOME/gnome-shell-extensions
